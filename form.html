@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Desafio HTML, Formulario</title>
+  </head>
+  <body>
+    <header><a href="index.html">Home</a></header>
+    <form id="contato" action="">
+      <fieldset>
+        <legend><h1>Entre em contato</h1></legend>
+        <label>
+          <h3>Assunto:</h3>
+          <select name="assunto" id="assunto">
+            <option value="--vazio--">Motivo do contato</option>
+            <option value="reclamação">Reclamação</option>
+            <option value="elogio">Elogio</option>
+            <option value="sugestão">Sugestão</option>
+          </select>
+        </label>
+        <br />
+        <label>
+          <h3>Nome Completo:</h3>
+          <input
+            type="text"
+            name="nome-do-requerente"
+            id="nome-do-requerente"
+            autocomplete="name"
+            placeholder="Nome completo"
+          />
+        </label>
+        <br />
+        <label>
+          <h3>e-mail:</h3>
+
+          <input
+            type="email"
+            name="email-do-requerente"
+            id="email-form-de-contato"
+            autocomplete="email"
+            placeholder="email"
+          />
+        </label>
+        <br />
+        <label>
+          <h3>Mensagem:</h3>
+
+          <textarea
+            name="mensagem"
+            id="mensagem"
+            cols="30"
+            rows="10"
+            placeholder="Digite sua mensagem aqui"
+          ></textarea>
+        </label>
+        <br />
+        <label>
+          <input
+            required
+            type="checkbox"
+            name="aceita-contato"
+            id="checkbox-contato"
+          />
+          aceito receber e-mails para o contato
+        </label>
+        <br />
+        <br />
+        <br />
+        <button type="submit">Enviar</button>
+      </fieldset>
+    </form>
+  </body>
+</html>
